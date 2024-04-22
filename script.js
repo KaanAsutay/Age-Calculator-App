@@ -1,1 +1,21 @@
 let userInput = document.getElementById("date")
+userInput.max = new Date().toISOString().split("T")[0]
+
+function calculateAge(){
+    let birthDate = new Date(userInput.value);
+
+    let d1 = birthDate.getDate();
+    let m1 = birthDate.getMonth() + 1;
+    let y1 = birthDate.getFullYear();
+
+    let today = new Date();
+
+    let d2 = birthDate.getDate();
+    let m2 = birthDate.getMonth() + 1;
+    let y2 = birthDate.getFullYear();
+
+    let d3, m3, y3;
+
+    y3 = y2 - y1;
+
+}
